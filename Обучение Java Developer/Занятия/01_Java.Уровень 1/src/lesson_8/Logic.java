@@ -22,11 +22,13 @@ public class Logic {
         printMap();
         if (checkWin(DOT_X)) {
             isGameFinished = true;
+            JOptionPane.showMessageDialog(new JFrame(), "Победил человек");
             return;
         }
 
         if (isMapFull()) {
             isGameFinished = true;
+            JOptionPane.showMessageDialog(new JFrame(), "Ничья");
             return;
         }
 
@@ -36,11 +38,13 @@ public class Logic {
 
         if (checkWin(DOT_O)) {
             isGameFinished = true;
+            JOptionPane.showMessageDialog(new JFrame(), "Победил Искуственный Интеллект");
             return;
         }
 
         if (isMapFull()) {
             isGameFinished = true;
+            JOptionPane.showMessageDialog(new JFrame(), "Ничья");
             return;
         }
 
